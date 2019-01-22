@@ -1,0 +1,47 @@
+.articles-container {
+    display: flex;
+	border-bottom: 1px solid #ccc;
+    &:first-child {
+        border-top: 1px solid #ccc;
+    }
+    &:last-child {
+        border-bottom: 1px solid #ccc;
+    }
+    img {
+       margin-top: 20px;
+       flex-grow: 1;
+       border-radius: 5px;
+    }
+    .articles-left {
+        flex-grow: 1;
+        .articles-title {
+            display: inherit;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.5;
+            color: #000;
+            padding-top: 20px;
+            &:hover {
+                text-decoration: underline;
+            }
+            &:visited {
+                color: #969696;
+            }
+            &.isCover {
+                width: 400px;
+            }
+            &.disCover {
+                width: 625px;
+            }
+        }
+        .articles-content {
+            margin: 10px 0 20px 0;
+            &.isCover {
+                width: 400px;
+            }
+            &.disCover {
+                width: 625px;
+            }
+        }
+    }
+}

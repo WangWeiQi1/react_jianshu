@@ -1,0 +1,24 @@
+.main-container {
+	width: 960px;
+	margin: 30px auto 0 auto;
+	.carousel {
+		width: 625px;
+		border-radius: 7px;
+		margin-bottom: 50px;
+	}
+	.articles {
+		width: 625px;
+	}
+}
+.loading-container {
+	width: 625px;
+	margin: 20px auto 0 auto;
+	text-align: center;
+}
+.goToTop {
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    top: 90%;
+    right: 15%;
+}

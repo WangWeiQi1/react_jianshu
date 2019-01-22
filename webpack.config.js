@@ -14,7 +14,8 @@ module.exports = {
 		alias: {
 			'common': path.resolve(__dirname, 'src/common'),
 			'components': path.resolve(__dirname, 'src/components'),
-			'statics': path.resolve(__dirname, 'src/statics')
+			'statics': path.resolve(__dirname, 'src/statics'),
+			'mock': path.resolve(__dirname, 'src/mock')
 		}
 	},
 	module: {
@@ -24,7 +25,14 @@ module.exports = {
 			use: {
 				loader: 'babel-loader',
 				options: {
-					presets: ['env', 'react']
+					presets: ['env', 'react'],
+					"plugins": [
+						["import", {
+							"libraryName": "antd",
+							"libraryDirectory": "es",
+							"style": "css" // `style: true` 会加载 less 文件
+						}]
+					]
 				}
 			}
 		}, {

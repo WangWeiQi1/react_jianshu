@@ -1,0 +1,16 @@
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 270px;
+  line-height: 270px;
+  background-color: hsla(0,0%,71%,.2);
+  overflow: hidden;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.ant-carousel .slick-slide img {
+  width: 625px;
+  height: 270px;
+  display: block;
+  border-radius: 7px;
+}
